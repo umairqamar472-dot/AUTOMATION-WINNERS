@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>automationwinners.com | Next-Gen AI & Business Automation Agency</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Supercharge your workflow with automationwinners.com. Premium web designing, custom web development, local business AI automations, AI voice calling agents, and automated AI operating system scripts.">
+  <meta name="keywords" content="automation agency, AI automation, web development, web designing, calling agents, OS script, CRM automation, local business AI">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- CSS Styling System -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Dynamic Reactive Background Canvas (Shaking Grid Mesh) -->
+  <div class="bg-mesh-container">
+    <canvas id="shaking-canvas"></canvas>
+  </div>
+
+  <!-- Ambient Glowing Orbs behind glass panels -->
+  <div class="ambient-glowing-orbs">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+  </div>
+
+  <!-- Floating Glassmorphic Navbar -->
+  <header class="header-nav" id="main-header">
+    <div class="container">
+      <nav class="navbar-container glass-panel">
+        
+        <!-- Logo -->
+        <a href="#home" class="logo">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span class="logo-text-gradient">automationwinners.com</span>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#faqs" class="nav-link">FAQs</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Nav Actions -->
+        <div class="nav-actions">
+          
+          <!-- Theme Switcher Button -->
+          <button class="theme-switch-btn" id="theme-toggle" aria-label="Toggle Light/Dark Theme">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+          </button>
+
+          <!-- CTA Button -->
+          <a href="#contact" class="btn btn-primary">
+            <span>Get Started</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-layout">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content scroll-reveal">
+          <div class="hero-subtitle">Welcome to the Automation Age</div>
+          
+          <!-- Middle Container: Enclosing text block and handshake image wrapper -->
+          <div class="hero-middle-container">
+            
+            <div class="hero-text-block">
+              <h1 class="hero-title">
+                <span class="hero-title-main">WE MAKE</span>
+                <span class="hero-title-gradient">TASKS EASY</span>
+              </h1>
+
+              <!-- Banner Animated Service Rotator -->
+              <div class="banner-service-rotator">
+                <span class="rotator-intro">We offer</span>
+                <span class="rotator-target" id="rotator-text">Web Designing</span>
+              </div>
+
+              <p class="hero-description">
+                Supercharge your operations with high-fidelity digital solutions. We engineer state-of-the-art UI designs, lightning-fast web applications, tailored local CRM workflows, conversational voice calling agents, and automated scripting that puts your business on complete autopilot.
+              </p>
+            </div>
+
+            <!-- Right Hero: High-Quality Widescreen Automation Visual -->
+            <div class="hero-media-wrapper scroll-reveal" style="transition-delay: 0.15s;">
+              <div class="hero-handshake-container">
+                <div class="hero-image-glow-orb"></div>
+                <img src="assets/handshake.png" alt="Industrial automation tablet and robotic control workspace" class="hero-handshake-image">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">
+              <span>Automate Now</span>
+              <i class="fa-solid fa-bolt"></i>
+            </a>
+            <a href="#services" class="btn btn-secondary">
+              <span>Explore Services</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">40h+</span>
+              <span class="stat-label">Saved Per Week</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">99.9%</span>
+              <span class="stat-label">System Uptime</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">10x</span>
+              <span class="stat-label">Efficiency Boost</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Categorized Services Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      
+      <div class="section-header scroll-reveal">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Services We Offer</h2>
+        <p class="section-desc">
+          Hyper-focused technical systems built with premium grade engineering to maximize business throughput.
+        </p>
+      </div>
+
+      <!-- Categories Filter Tabs -->
+      <div class="services-filters scroll-reveal">
+        <button class="filter-btn active" data-filter="all">All Specialties</button>
+        <button class="filter-btn" data-filter="design-dev">Design & Dev</button>
+        <button class="filter-btn" data-filter="ai">AI Automations</button>
+        <button class="filter-btn" data-filter="systems">AI Operating Systems</button>
+      </div>
+
+      <!-- Services Cards Grid -->
+      <div class="services-grid scroll-reveal">
+        
+        <!-- Card 1: Web Designing -->
+        <div class="service-card glass-panel scroll-reveal" data-category="design-dev">
+          <div class="service-media">
+            <img src="assets/service_web_design.png" alt="Web Designing Visual">
+          </div>
+          <div class="service-icon-box">
+            <i class="fa-solid fa-compass-drafting"></i>
+          </div>
+          <h3>Web Designing</h3>
+          <p>
+            Stunning state-of-the-art visual systems using highly interactive components, beautiful glassmorphism gradients, custom dark/light templates, and absolute responsive optimization.
+          </p>
+          <ul class="service-features-list">
+            <li><i class="fa-solid fa-circle-check"></i> High-Fidelity UI/UX Layouts</li>
+            <li><i class="fa-solid fa-circle-check"></i> Interactive Glassmorphism Gradients</li>
+            <li><i class="fa-solid fa-circle-check"></i> Responsive Mobile-First Design</li>
+          </ul>
+          <a href="#contact" class="service-card-link">
+            <span>GET SERVICE NOW</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+          <div class="service-card-glow"></div>
+        </div>
+
+        <!-- Card 2: Web Development -->
+        <div class="service-card glass-panel scroll-reveal" data-category="design-dev">
+          <div class="service-media">
+            <img src="assets/service_web_dev.png" alt="Web Development Visual">
+          </div>
+          <div class="service-icon-box">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>
+            Building incredibly fast responsive frontend interfaces and secure backend integrations. We structure robust web apps that load instantly, score high on SEO, and convert visitors into customers.
+          </p>
+          <ul class="service-features-list">
+            <li><i class="fa-solid fa-circle-check"></i> Ultra-Fast Static and Dynamic Pages</li>
+            <li><i class="fa-solid fa-circle-check"></i> Scalable Client Dashboards</li>
+            <li><i class="fa-solid fa-circle-check"></i> Premium SEO Structure Integration</li>
+          </ul>
+          <a href="#contact" class="service-card-link">
+            <span>GET SERVICE NOW</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+          <div class="service-card-glow"></div>
+        </div>
+
+        <!-- Card 3: AI Automations for Local Businesses -->
+        <div class="service-card glass-panel scroll-reveal" data-category="ai">
+          <div class="service-media">
+            <img src="assets/service_ai_auto.png" alt="AI Automations Visual">
+          </div>
+          <div class="service-icon-box">
+            <i class="fa-solid fa-diagram-project"></i>
+          </div>
+          <h3>AI Automations</h3>
+          <p>
+            Supercharge your local company with automated customer acquisition funnels, booking auto-schedulers, chat-bot pipelines, instant reviews, and CRM databases customized for local business growth.
+          </p>
+          <ul class="service-features-list">
+            <li><i class="fa-solid fa-circle-check"></i> Auto Lead Routing & CRM Sync</li>
+            <li><i class="fa-solid fa-circle-check"></i> Automated Customer Review Requests</li>
+            <li><i class="fa-solid fa-circle-check"></i> Multi-Platform AI Chat Bots</li>
+          </ul>
+          <a href="#contact" class="service-card-link">
+            <span>GET SERVICE NOW</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+          <div class="service-card-glow"></div>
+        </div>
+
+        <!-- Card 4: Calling Agents -->
+        <div class="service-card glass-panel scroll-reveal" data-category="ai">
+          <div class="service-media">
+            <img src="assets/service_voice_agent.png" alt="Calling Agents Visual">
+          </div>
+          <div class="service-icon-box">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <h3>Calling Agents</h3>
+          <p>
+            State-of-the-art conversational voice AI agents built with natural language voice intelligence. Instantly handles inbound client bookings, cold and warm outbound follow-ups, and 24/7 reception desk tasks.
+          </p>
+          <ul class="service-features-list">
+            <li><i class="fa-solid fa-circle-check"></i> 24/7 Multi-line Booking Agents</li>
+            <li><i class="fa-solid fa-circle-check"></i> High-Speed Outbound Call Pipelines</li>
+            <li><i class="fa-solid fa-circle-check"></i> Ultra-Realistic Conversational Voices</li>
+          </ul>
+          <a href="#contact" class="service-card-link">
+            <span>GET SERVICE NOW</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+          <div class="service-card-glow"></div>
+        </div>
+
+        <!-- Card 5: Operating Systems Scripts -->
+        <div class="service-card glass-panel scroll-reveal" data-category="systems">
+          <div class="service-media">
+            <img src="assets/service_sys_script.png" alt="AI Operating Systems Visual">
+          </div>
+          <div class="service-icon-box">
+            <i class="fa-solid fa-terminal"></i>
+          </div>
+          <h3>AI Operating Systems</h3>
+          <p>
+            Automated scripts and operating workflows that tie your services together. Custom deployment pipelines, batch data processes, server scripting, and unified dashboard panels running on secure OS scripts.
+          </p>
+          <ul class="service-features-list">
+            <li><i class="fa-solid fa-circle-check"></i> High-Speed System Shell Scripting</li>
+            <li><i class="fa-solid fa-circle-check"></i> Seamless Third-Party API Orchestration</li>
+            <li><i class="fa-solid fa-circle-check"></i> Custom Deployment & Backups</li>
+          </ul>
+          <a href="#contact" class="service-card-link">
+            <span>GET SERVICE NOW</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+          <div class="service-card-glow"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Previous Projects Showcase Section -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      
+      <div class="section-header scroll-reveal">
+        <span class="section-tag">Case Studies</span>
+        <h2 class="section-title">Previous Client Projects</h2>
+        <p class="section-desc">
+          Peek inside real live-scale systems we've deployed to save thousands of labor hours and accelerate pipeline metrics.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card scroll-reveal">
+          <div class="project-badge">Local AI</div>
+          <div class="project-media">
+            <img src="assets/autoclinic.png" alt="AutoClinic CRM Dashboard" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-medium);">
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span><i class="fa-solid fa-clock"></i> 3 Weeks Deployment</span>
+              <span><i class="fa-solid fa-shield-halved"></i> HIPPA Compliant</span>
+            </div>
+            <h3>AutoClinic AI CRM</h3>
+            <p>
+              Complete scheduling and follow-up suite designed for dental and local clinics. Auto-routes inbound SMS inquiries, confirms bookings, and integrates with clinic database calendars automatically.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-box">
+                <span class="metric-val">92%</span>
+                <span class="metric-lbl">Auto-Booked Rate</span>
+              </div>
+              <a href="#contact" class="project-btn" aria-label="View Project Details">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card scroll-reveal" style="transition-delay: 0.1s;">
+          <div class="project-badge">Automation</div>
+          <div class="project-media">
+            <img src="assets/legalflow.png" alt="LegalFlow Doc Pipeline Dashboard" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-medium);">
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span><i class="fa-solid fa-clock"></i> 4 Weeks Deployment</span>
+              <span><i class="fa-solid fa-bolt"></i> Speed Upgrade</span>
+            </div>
+            <h3>LegalFlow Doc Pipeline</h3>
+            <p>
+              Interactive web dashboard and system scripting generating custom compliance contracts. Gathers client intake metrics, formats drafts instantly, and routes documents to client databases.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-box">
+                <span class="metric-val">80%</span>
+                <span class="metric-lbl">Speed Boost</span>
+              </div>
+              <a href="#contact" class="project-btn" aria-label="View Project Details">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card scroll-reveal" style="transition-delay: 0.2s;">
+          <div class="project-badge">AI Calling</div>
+          <div class="project-media">
+            <img src="assets/cyberdial.png" alt="CyberDial Voice Agent Analytics Dashboard" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-medium);">
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span><i class="fa-solid fa-clock"></i> 2 Weeks Deployment</span>
+              <span><i class="fa-solid fa-users"></i> 100+ Sim-Calls</span>
+            </div>
+            <h3>CyberDial voice Agent</h3>
+            <p>
+              Ultra-realistic customer service receptionist call desk. Manages dynamic cold prospects routing, books client consultation meetings, and saves transcripts of operations directly into active leads sheets.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-box">
+                <span class="metric-val">4.8x</span>
+                <span class="metric-lbl">Lead Conversions</span>
+              </div>
+              <a href="#contact" class="project-btn" aria-label="View Project Details">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Client Reviews Section -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      
+      <div class="section-header scroll-reveal">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">Client Reviews</h2>
+        <p class="section-desc">
+          Hear from our actual business clients who optimized their standard manual operations to scale with ease.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        
+        <!-- Review 1 -->
+        <div class="review-card glass-panel scroll-reveal">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            "AUTOMATION WINNERS completely revolutionized our patient bookings. Their Clinic CRM handles 90% of scheduling without any front-desk staff touch. Highly recommended for any local doctor office."
+          </p>
+          <div class="review-client">
+            <div class="client-avatar-fallback">LH</div>
+            <div class="client-info">
+              <h4>Dr. Lucas Halen</h4>
+              <p>Founder, Summit Wellness Group</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card glass-panel scroll-reveal" style="transition-delay: 0.1s;">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            "We saves over 35 hours every single week in generating custom legal agreements. Their clean Operating System scripts combined with a beautiful responsive intake form works like absolute magic!"
+          </p>
+          <div class="review-client">
+            <div class="client-avatar-fallback">SM</div>
+            <div class="client-info">
+              <h4>Sandra Mccormick</h4>
+              <p>COO, McCormick Consulting</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card glass-panel scroll-reveal" style="transition-delay: 0.2s;">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            "The AI Calling Agent changed everything for our outbound plumbing calls. Leads are qualified instantly, appointments booked, and we only step in to do the actual job. True autopilot!"
+          </p>
+          <div class="review-client">
+            <div class="client-avatar-fallback">JK</div>
+            <div class="client-info">
+              <h4>Jason Knight</h4>
+              <p>Owner, Apex Drain & Plumb Services</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQs Accordion Section -->
+  <section class="faqs-section" id="faqs">
+    <div class="container">
+      
+      <div class="section-header scroll-reveal">
+        <span class="section-tag">Knowledge</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">
+          Got questions? We've compiled direct answers to clear things up about automation integrations.
+        </p>
+      </div>
+
+      <div class="faqs-container scroll-reveal">
+        
+        <!-- Accordion 1: Tasks We Automate -->
+        <div class="faq-item glass-panel">
+          <button class="faq-header">
+            <h3>What specific business tasks can AUTOMATION WINNERS automate?</h3>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              We engineer custom scripting pipelines that automate highly repetitive, data-heavy, or communication-centric operations. This includes CRM lead ingestion and auto-routing, real-time client booking syncs, email/SMS follow-up campaigns, automated document creation (such as PDF contract drafts and customized invoices), web scraping, and automated batch data updates across your apps.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion 2: Website Platform Information -->
+        <div class="faq-item glass-panel">
+          <button class="faq-header">
+            <h3>What visual and interactive features are built into this website?</h3>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Our website uses premium typography (Space Grotesk + Plus Jakarta Sans) paired with a responsive dual-theme engine. Visitors can toggle between deep cybernetic obsidian-dark mode and clean technical slate-light mode. It is built with an interactive HTML5 Canvas connections grid that tracks mouse movement and performs physically simulated grid shakes upon clicks.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion 3: Pricing Information -->
+        <div class="faq-item glass-panel">
+          <button class="faq-header">
+            <h3>How is your project pricing structured?</h3>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              We offer transparent, fixed, scope-based pricing for all our development work. Every client engagement starts with a detailed technical discovery phase. You pay a clear one-time development fee with no hidden monthly agency markups. Because we write lightweight custom code rather than nesting expensive third-party tools, you save thousands in ongoing SaaS licensing fees.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion 4: Security Details -->
+        <div class="faq-item glass-panel">
+          <button class="faq-header">
+            <h3>How secure are the automation workflows and data pathways?</h3>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Security is our core priority. All of our automation scripts, web forms, and document pipelines run on secure, authenticated pathways utilizing industry-standard TLS encryption. When leads are generated, they are immediately compiled and safely routed via secure SMTP relays straight to our target inbox, guaranteeing complete data privacy.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Us Form Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      
+      <div class="section-header scroll-reveal">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Reach Out to Us</h2>
+        <p class="section-desc">
+          Ready to scale on autopilot? Submit your details below to schedule an automation audit call with our senior tech experts.
+        </p>
+      </div>
+
+      <div class="contact-layout glass-panel scroll-reveal">
+        
+        <!-- Left Side: Agency Details -->
+        <div class="contact-info-panel">
+          <div class="contact-header">
+            <h2>Let's Build Something Win-Worthy</h2>
+            <p>We typically respond to requests with a detailed technical plan within 2 business hours.</p>
+          </div>
+
+          <div class="contact-methods">
+            
+            <div class="method-item">
+              <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="method-info">
+                <h4>Private Leads Dispatch</h4>
+                <p>umairqamar472@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="method-item">
+              <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="method-info">
+                <h4>HQ Address</h4>
+                <p>742 Evergreen Terrace, Automation City</p>
+              </div>
+            </div>
+
+            <div class="method-item">
+              <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="method-info">
+                <h4>Direct Phone Hotline</h4>
+                <p>+1 (555) WINNERS</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="contact-socials-box">
+            <h4>Follow Our Winners Pipeline</h4>
+            <div class="socials-list">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/umairqamar472-dot" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Contact Form with Holographic terminal overlay -->
+        <div class="contact-form-panel">
+          
+          <!-- Real HTML Form - Submits directly to FormSubmit endpoint pointing to the requested GMAIL -->
+          <form action="https://formsubmit.co/ajax/umairqamar472@gmail.com" method="POST" class="cyber-form" id="leads-form">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="client-name" class="form-label">Your Name</label>
+                <div class="form-input-wrapper">
+                  <input type="text" id="client-name" name="name" class="form-input" placeholder="John Doe" required>
+                  <i class="fa-solid fa-user"></i>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="client-email" class="form-label">Email Address</label>
+                <div class="form-input-wrapper">
+                  <input type="email" id="client-email" name="email" class="form-input" placeholder="john@example.com" required>
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service-select" class="form-label">Service Needed</label>
+              <div class="form-input-wrapper select-wrapper">
+                <select id="service-select" name="service" class="form-input" required>
+                  <option value="" disabled selected>Select an automation service</option>
+                  <option value="web-design">Web Designing (UI/UX & Branding)</option>
+                  <option value="web-development">Web Development (Full-stack App)</option>
+                  <option value="ai-automations">AI Automations (Local CRM Pipelines)</option>
+                  <option value="calling-agents">Calling Agents (Voice AI Receps)</option>
+                  <option value="operating-systems">AI Operating Systems (Shell Scripts)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="client-message" class="form-label">Explain Your Project</label>
+              <textarea id="client-message" name="message" class="form-input" placeholder="Briefly describe what tasks or processes you want to automate..." required></textarea>
+            </div>
+
+            <div class="form-privacy-note">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>All details are transmitted securely and kept strictly private.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+              <span>Submit Pipeline request</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+          </form>
+
+          <!-- Holographic Terminal Success Overlay -->
+          <div class="terminal-overlay" id="terminal-overlay">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="term-dot term-dot-red"></span>
+                <span class="term-dot term-dot-yellow"></span>
+                <span class="term-dot term-dot-green"></span>
+              </div>
+              <div class="terminal-title">AUTOMATION_WINNERS_LOGS.sh</div>
+            </div>
+            
+            <div class="terminal-logs" id="terminal-logs">
+              <!-- Logs get inserted via JS dynamically -->
+            </div>
+
+            <!-- Big Prominent Success Alert Box -->
+            <div class="terminal-success-box" id="terminal-success-box">
+              <i class="fa-solid fa-circle-check"></i>
+              <h2>YOUR MESSAGE HAS BEEN SENT!</h2>
+              <p>Routed to: umairqamar472@gmail.com</p>
+            </div>
+
+            <div class="terminal-btn-box">
+              <button class="terminal-close-btn" id="terminal-close">Acknowledge Connection</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span class="logo-text-gradient">automationwinners.com</span>
+          </a>
+          <p>
+            Premium automation engineering putting local businesses and workflows on robust digital autopilot.
+          </p>
+          <div class="socials-list">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/umairqamar472-dot" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services We Offer</a></li>
+            <li><a href="#projects">Previous Client Projects</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Address Details -->
+        <div class="footer-column">
+          <h3>Reach Us</h3>
+          <div class="footer-address-box">
+            <div class="footer-address-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>742 Evergreen Terrace,<br>Tech District, Automation City,<br>AC 90210</span>
+            </div>
+            <div class="footer-address-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@automationwinners.com</span>
+            </div>
+            <div class="footer-address-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+1 (555) WINNERS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Stay updated on the latest AI CRM algorithms and automation scripts.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to automation newsletters!'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="fa-solid fa-chevron-right"></i></button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> automationwinners.com. All Rights Reserved. Private lead deliveries active.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security Audits</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script Interactions & Dynamic Background Physics -->
+  <script src="script.js"></script>
+</body>
+</html>
